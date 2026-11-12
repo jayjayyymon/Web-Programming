@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Campus Notices</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#">Home</a>
+      <a href="notices.html">Read Notices</a>
+      <a href="#About">About us</a>
+    </nav>
+
+    <header>
+      <h1>Campus Notices</h1>
+      <p id="sentence1">The College of <strong>Computer Science</strong></p>
+    </header>
+
+    <main>
+      <h3>Faculty Members</h3>
+      <ol>
+        <li>Haydee Limson</li>
+        <li>Fernan Mendoza</li>
+        <li>Charlie Marzan</li>
+        <li>Belinda Celestial</li>
+        <li>Joe Anthony Milan</li>
+      </ol>
+
+      <ul>
+        <li>Haydee Limson</li>
+        <li>Fernan Mendoza</li>
+        <li>Charlie Marzan</li>
+        <li>Belinda Celestial</li>
+        <li>Joe Anthony Milan</li>
+      </ul>
+
+      <img src="image.jpg" alt="an Image" width="auto" height="300px" />
+    </main>
+
+    <form action="/api/notices" method="post">
+      <label for="title">Title</label><br />
+      <input id="title" name="title" type="text" required />
+      <br />
+      <label for="msg">Message</label>
+      <br />
+      <textarea id="msg" name="message"></textarea>
+      <br />
+      <button type="submit" class="btn-primary">Post notice</button>
+    </form>
+
+    <footer>
+      <p>College of Computer Science @2026</p>
+    </footer>
+  </body>
+</html>
