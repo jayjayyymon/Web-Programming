@@ -2,56 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don Mariano Marcos Memorial State University</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Campus Notices</title>
   </head>
   <body>
-    <nav id="navbar">
-      <a href="#">Home</a>
-      <a href="notices.html">Read Notices</a>
-      <a href="#About">About us</a>
+    <header class="header">
+      <img src="images/logo.png" alt="DMMMSU Logo" />
+      <h1>Don Mariano Marcos Memorial State University</h1>
+    </header>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
 
-    <header>
-      <h1>Campus Notices</h1>
-      <p id="sentence1">The College of <strong>Computer Science</strong></p>
-    </header>
-
-    <main>
-      <h3>Faculty Members</h3>
-      <ol>
-        <li>Haydee Limson</li>
-        <li>Fernan Mendoza</li>
-        <li>Charlie Marzan</li>
-        <li>Belinda Celestial</li>
-        <li>Joe Anthony Milan</li>
-      </ol>
-
-      <ul>
-        <li>Haydee Limson</li>
-        <li>Fernan Mendoza</li>
-        <li>Charlie Marzan</li>
-        <li>Belinda Celestial</li>
-        <li>Joe Anthony Milan</li>
-      </ul>
-
-      <img src="image.jpg" alt="an Image" width="auto" height="300px" />
-    </main>
-
-    <form action="/api/notices" method="post">
-      <label for="title">Title</label><br />
-      <input id="title" name="title" type="text" required />
-      <br />
-      <label for="msg">Message</label>
-      <br />
-      <textarea id="msg" name="message"></textarea>
-      <br />
-      <button type="submit" class="btn-primary">Post notice</button>
-    </form>
-
-    <footer>
-      <p>College of Computer Science @2026</p>
+    <div class="container">
+      <main>
+        <form action="/login" method="POST" class="form">
+          <table>
+            <th colspan="2"><h3>Login Form</h3></th>
+            <tr>
+              <td><label for="username">Username:</label></td>
+              <td><input type="text" id="username" required /></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" id="password" required /></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="buttons">
+                  <button button-type="submit">Login</button>
+                  <button button-type="submit">Register</button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </main>
+      <side class="side">
+        <img src="images/image1.jpg" alt="an image" />
+      </side>
+    </div>
+    <footer class="footer">
+      <p>All Rights Reserved 2027</p>
     </footer>
   </body>
 </html>
